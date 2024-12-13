@@ -27,6 +27,10 @@ header {
     color: white;
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #2B2B2B;
+    z-index: 999;
 }
 
 header img {
@@ -82,7 +86,13 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    max-width: 85%;
+    max-width: 75%;
+}
+
+@media screen and (max-width: 1375px) {
+    main {
+        max-width: 85%;
+    }
 }
 
 main .hero {
@@ -116,12 +126,30 @@ main .hero .left .hero-info {
     gap: 10%;
 }
 
+@media screen and (max-width: 1375px) {
+    main .hero .left .hero-info {
+        gap: 10%;
+    }
+}
+
 main .hero .left .hero-info .count {
     font-size: 48px;
 }
 
+@media screen and (max-width: 1375px) {
+    main .hero .left .hero-info .count {
+        font-size: 36px;
+    }
+}
+
 main .hero .left .hero-info p {
     font-size: 28px;
+}
+
+@media screen and (max-width: 1375px) {
+    main .hero .left .hero-info p {
+        font-size: 22px;
+    }
 }
 
 main .hero .right {
@@ -201,4 +229,180 @@ main .hero .right img {
 .btn:hover {
     background-color: #8933fa;
     scale: 1.1;
+}
+
+.btn-outlined {
+    background-color: transparent;
+    color: var(--pri-color);
+    border: 1px solid var(--pri-color);
+    outline: none;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 16px 32px;
+    font-size: 16px;
+}
+
+.btn-outlined:hover {
+    background-color: var(--pri-color);
+    color: var(--white-color);
+}
+
+.btn-outlined .RocketLaunch {
+    display: none;
+}
+
+.btn-outlined:hover .RocketLaunch {
+    display: inline;
+}
+
+.btn-outlined:hover .outlined-rocket {
+    display: none;
+}
+
+.trending-collections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin: 44px 0;
+}
+
+.trending-collections .myData {
+    width: 100%;
+}
+
+.trending-collections .myData .mainImg {
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    object-fit: contain;
+}
+
+.trending-collections .myData .sub-collection {
+    margin-top: 12px;
+    display: flex;
+    gap: 12px;
+    width: 100%;
+}
+
+.trending-collections .myData .sub-collection img {
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    object-fit: contain;
+}
+
+.trending-collections .myData .creator {
+    margin-top: 12px;
+}
+
+.trending-collections .myData .creator h2 {
+    font-size: 31px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.trending-collections .myData .creator .about {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.trending-collections .myData .creator .about p {
+    font-size: 20px;
+    font-weight: 350;
+}
+
+.creators {
+    width: 100%;
+    margin: 67px 0;
+    
+}
+
+.creators .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.creators .top .left h2 {
+    font-size: 46px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.creators .top .left p {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.top-creators {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin-top: 44px;
+    width: 100%;
+}
+
+.top-creators .creator{
+    position: relative;
+}
+
+.top-creators .creator .rank{
+    position: absolute;
+    top: 16px;
+    z-index: 10;
+    left: 16px;
+    padding: 5px 9px;
+    border-radius: 50%;
+    background: #2B2B2B;
+    color: #858584;
+}
+
+.top-creators .creator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    background-color: var(--blur-back);
+    padding: 20px;
+    border-radius: 20px;
+    width: 240px;
+    text-align: center;
+}
+
+.top-creators .creator .info h4 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.top-creators .creator .info p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 16px;
+}
+
+.top-creators .creator .info p span{
+    color: #858584;
+}
+
+.categories{
+    width: 100%;
+}
+
+.heading{
+    font-size: 46px;
+    font-weight: 600;
+    margin: 44px 0;
 }
