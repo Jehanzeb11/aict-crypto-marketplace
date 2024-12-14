@@ -323,7 +323,7 @@ main .hero .right img {
 .creators {
     width: 100%;
     margin: 67px 0;
-    
+
 }
 
 .creators .top {
@@ -355,11 +355,11 @@ main .hero .right img {
     width: 100%;
 }
 
-.top-creators .creator{
+.top-creators .creator {
     position: relative;
 }
 
-.top-creators .creator .rank{
+.top-creators .creator .rank {
     position: absolute;
     top: 16px;
     z-index: 10;
@@ -393,16 +393,73 @@ main .hero .right img {
     margin-top: 16px;
 }
 
-.top-creators .creator .info p span{
+.top-creators .creator .info p span {
     color: #858584;
 }
 
-.categories{
+.categories {
     width: 100%;
 }
 
-.heading{
+.heading {
     font-size: 46px;
     font-weight: 600;
     margin: 44px 0;
+}
+
+.categories .cat-data {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.categories .cat-data .cat {
+    width: 240px;
+    margin-bottom: 30px;
+}
+
+.categories .cat-data .cat img {
+    object-fit: contain;
+    width: 100%;
+    margin: 0;
+
+}
+
+.categories .cat-data .cat .about {
+    width: 100%;
+    background-color: var(--blur-back);
+    padding: 20px;
+    margin: 0;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.categories .cat-data .cat .about h4 {
+    font-size: 22px;
+}
+
+.discover-nfts{
+    width: 100%;
+    margin: 44px 0;
+}
+
+.discover-nfts .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}
+
+
+.discover-nfts .top .left h2 {
+    font-size: 46px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.discover-nfts .top .left p {
+    font-size: 32px;
+    font-weight: 300;
 }
