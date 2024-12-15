@@ -14,6 +14,18 @@
     color: #fff;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: #3B3B3B;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--pri-color);
+    border-radius: 8px;
+}
+
 body {
     background-color: #2B2B2B;
     display: flex;
@@ -350,7 +362,7 @@ main .hero .right img {
     justify-content: start;
     align-items: center;
     flex-wrap: wrap;
-    gap: 28px;
+    gap: 36px;
     margin-top: 44px;
     width: 100%;
 }
@@ -409,7 +421,7 @@ main .hero .right img {
 
 .categories .cat-data {
     display: flex;
-    gap: 28px;
+    gap: 36px;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
@@ -417,6 +429,11 @@ main .hero .right img {
 .categories .cat-data .cat {
     width: 240px;
     margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.categories .cat-data .cat:hover {
+    transform: scale(1.1);
 }
 
 .categories .cat-data .cat img {
@@ -462,4 +479,352 @@ main .hero .right img {
 .discover-nfts .top .left p {
     font-size: 32px;
     font-weight: 300;
+}
+
+
+.discover-nfts .content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 36px;
+    margin-top: 44px;
+    width: 100%;
+}
+
+.discover-nfts .content .card {
+    width: 450px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.discover-nfts .content .card:hover {
+    transform: scale(1.1);
+}
+
+.discover-nfts .content .card img {
+    object-fit: cover;
+    width: 100%;
+    margin: 0;
+}
+
+.discover-nfts .content .card .info {
+    width: 100%;
+    background-color: var(--blur-back);
+    padding: 20px;
+    margin: 0;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+
+.discover-nfts .content .card .info h4 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.discover-nfts .content .card .info .about {
+    display: flex;
+    align-items: center;
+    margin: 32px 0;
+    gap: 12px;
+    font-size: 18px;
+}
+
+.discover-nfts .content .card .info .about img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.discover-nfts .content .card .info .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.discover-nfts .content .card .info .price div .priceHeading{
+    font-size: 16px;
+    font-weight: 400;
+    color: #858584;
+}
+
+.discover-nfts .content .card .info .price div .priceInfo{
+        font-size: 22px;
+        margin-top: 6px;
+        font-weight: 400;
+}
+.how-works{
+    width: 100%;
+    margin: 44px 0;
+}
+
+.how-works h2 {
+    font-size: 46px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.how-works p {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+
+.how-works .content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 36px;
+    margin-top: 44px;
+    width: 100%;
+}
+
+.how-works .content .card {
+    width: 450px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-color: var(--blur-back);
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.how-works .content .card img {
+    object-fit: contain;
+    width: 250px;
+    height: 250px;    
+}
+
+.how-works .content .card .info {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+}
+
+.how-works .content .card .info h4 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.how-works .content .card .info p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 12px;
+    padding: 0 16px;
+}
+
+.join-us{
+    background-color: var(--blur-back);
+    padding: 44px;
+    border-radius: 22px;
+    width: 100%;
+    margin: 44px 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 166px;
+}
+
+.join-us div h1{
+    font-size: 46px;
+    font-weight: 500;
+}
+
+.join-us div p{
+    font-size: 32px;
+    font-weight: 300;
+    margin: 12px 0;
+}
+
+.join-us form{
+    margin-top: 22px;
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--white-color);
+    border-radius: 22px;
+}
+
+
+.join-us form input{
+    width: 100%;
+    border-radius: 22px;
+    color: #2B2B2B;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: normal;
+    background-color: var(--white-color);
+    padding: 0 32px;
+}
+
+.join-us form button{
+    width: 250px;
+}
+
+.join-us form button img{
+    object-fit: contain;
+    width: 24px;
+    height: auto;
+}
+
+
+footer {
+    width: 100%;
+    margin-top: 44px;
+    background-color: var(--blur-back);
+    padding: 44px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .top {
+    width: 80%;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    color: #858584;
+}
+
+footer .top .first {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 24px;
+    color: #858584;
+    width: 33%;
+
+}
+
+footer .top .first h5 {
+    font-size: 22px;
+    font-weight: normal;
+    color: #cccccc;
+}
+
+footer .top .first p {
+    font-size: 22px;
+    font-weight: normal;
+    color: #cccccc;
+}
+
+footer .top .first img {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+}
+
+footer .top .first .social {
+    display: flex;
+    gap: 16px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+footer .top .first .social img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+footer .top .second {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    gap: 16px;
+    font-size: 24px;
+    color: #858584;
+    width: 33%;
+}
+
+footer .top .second h5 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+}
+
+footer .top .second ul {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+footer .top .second ul li {
+    font-size: 22px;
+    font-weight: normal;
+    list-style-type: none;
+    color: #cccccc;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    width: fit-content;
+    transition: all 0.3s ease;
+}
+
+footer .top .second ul li:hover {
+    color: #fff;
+    border-bottom: 1px solid var(--pri-color);
+}
+
+footer .top .third {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 24px;
+    color: #858584;
+    width: 33%;
+}   
+
+footer .top .third h5 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+}
+
+footer .top .third p {
+    font-size: 22px;
+    font-weight: normal;
+    color: #cccccc;
+}
+
+footer .top .third form {
+    margin-top: 12px;
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--white-color);
+    border-radius: 22px;
+}
+
+
+footer .top .third form input{
+    width: 100%;
+    border-radius: 22px;
+    color: #2B2B2B;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: normal;
+    background-color: var(--white-color);
+    padding: 0 32px;
+}
+
+footer .bottom {
+    border-top: 1px solid #cccccc ;
+    margin-top: 32px;
+    padding-top: 18px;
+    display: flex;
+    color: #cccccc;
+    font-size: 16px;
+    font-weight: normal;
+    width: 80%;
 }
