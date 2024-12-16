@@ -828,3 +828,114 @@ footer .bottom {
     font-weight: normal;
     width: 80%;
 }
+
+/* create-account */
+
+.create-account{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 140px;
+    padding: 32px 0;
+    width: 100%;
+}
+
+.create-account img{
+    width: 40%;
+    height: auto;
+    object-fit: contain;
+}
+
+.create-account form{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: 100%;
+    max-width: 600px;
+    background-color: transparent;
+    border-radius: 22px;
+    padding: 32px;
+}
+
+.create-account form h1{
+    font-size: 67px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.create-account form p{
+    font-size: 22px;
+    font-weight: normal;
+    color: #cccccc;
+    line-height: 38px;
+}
+
+.create-account form input{
+    width: 100%;
+    border-radius: 22px;
+    color: #2B2B2B;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: normal;
+    background-color: var(--white-color);
+    padding: 0 22px;
+    height: 60px;
+}   
+
+.create-account form button{
+    font-size: 22px;
+    width: 100%;
+    height: 60px;
+}
+
+.create-account form .myInput{
+    display: flex;
+    align-items: center;
+    background-color: var(--white-color);
+    border-radius: 100px;
+    padding: 0 32px;
+    height: 60px;
+}
+
+.create-account form .myInput img{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.wallets{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 32px;
+    width: 100%;
+    max-width: 600px;
+}
+
+
+.wallets .wallet {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border: 2px solid var(--pri-color);
+    gap: 12px;
+    width: 350px;
+    height: 80px;
+    border-radius: 22px;
+    background-color: var(--blur-back);
+    padding: 0 22px 0px 44px;
+    cursor: pointer;
+}
+
+.wallets .wallet img{
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+
+.wallets .wallet p{
+    font-size: 22px;
+    font-weight: 550;
+    color: var(--white-color);
+}
