@@ -1,5 +1,6 @@
 const topCreator = document.querySelector(".top-creators");
 const catData = document.querySelector(".cat-data");
+const artists = document.querySelector(".artists");
 
 const creators = [
   {
@@ -69,37 +70,148 @@ const creators = [
 const categoryData = [
   {
     image: "./assets/category-1.png",
-    name: "Art"
+    name: "Art",
   },
   {
     image: "./assets/category-2.png",
-    name: "Collectibles"
+    name: "Collectibles",
   },
   {
     image: "./assets/categor-3.png",
-    name: "Music"
+    name: "Music",
   },
   {
     image: "./assets/categor-4.png",
-    name: "Photography"
+    name: "Photography",
   },
   {
     image: "./assets/categor-5.png",
-    name: "Video"
+    name: "Video",
   },
   {
     image: "./assets/categor-6.png",
-    name: "Utility"
+    name: "Utility",
   },
   {
     image: "./assets/categor-7.png",
-    name: "Sport"
+    name: "Sport",
   },
   {
     image: "./assets/categor-8.png",
-    name: "Virtual Worlds"
+    name: "Virtual Worlds",
   },
-]
+];
+
+const artistArray = [
+  {
+    name: "Jaydon Ekstrom Bothman",
+    image: "../assets/avatar-1.png",
+    change: "+1.41%",
+    sold: 602,
+    sales: "34.53 ETH",
+  },
+  {
+    name: "Ruben Carder",
+    image: "../assets/avatar-2.png",
+    change: "+1.41%",
+    sold: 602,
+    sales: "34.53 ETH",
+  },
+  {
+    name: "Alfredo Septimus",
+    image: "../assets/avatar-3.png",
+    change: "+1.41%",
+    sold: 602,
+    sales: "34.53 ETH",
+  },
+  {
+    name: "Davis Franci",
+    image: "../assets/avatar-4.png",
+    change: "+1.41%",
+    sold: 602,
+    sales: "34.53 ETH",
+  },
+  {
+    name: "Livia Rosser",
+    image: "../assets/avatar-5.png",
+    change: "+1.41%",
+    sold: 602,
+    sales: "34.53 ETH",
+  },{
+    name: "Kianna Donin",
+    image: "../assets/avatar-6.png",
+    change: "+1.41%",
+    sold: 602,
+    sales: "34.53 ETH",
+  },
+  {
+    name: "Phillip Lipshutz",
+    image: "../assets/avatar-7.png",
+    change: "+1.41%",
+    sold: 602,
+    sales: "34.53 ETH",
+  },
+  {
+    name: "Maria Rosser",
+    image: "../assets/avatar-8.png",
+    change: "+1.41%",
+    sold: 602,
+    sales: "34.53 ETH",
+  },
+  {
+    name: "Kianna Stanton",
+    image: "../assets/avatar-9.png",
+    change: "+1.41%",
+    sold: 602,
+    sales: "34.53 ETH",
+  },
+
+  {
+    name: "Angel Lubin",
+    image: "../assets/avatar-10.png",
+    change: "+1.41%",
+    sold: 602,
+    sales: "34.53 ETH",
+  },
+  {
+    name: "Allison Torff",
+    image: "../assets/avatar-11.png",
+    change: "+1.41%",
+    sold: 602,
+    sales: "34.53 ETH",
+  },
+  {
+    name: "Davis Workman",
+    image: "../assets/avatar-2.png",
+    change: "+1.41%",
+    sold: 602,
+    sales: "34.53 ETH",
+  },
+
+  {
+    name: "Lindsey Lipshutz",
+    image: "../assets/avatar-5.png",
+    change: "+1.41%",
+    sold: 602,
+    sales: "34.53 ETH",
+  },
+];
+
+artistArray.forEach((data, index) => {
+  const creatorDiv = document.createElement("div");
+  creatorDiv.classList.add("artist");
+  creatorDiv.innerHTML = `    
+              <p class="index">${index + 1}</p>
+              <div class="artist-info">
+                <img src="${data.image}" alt="artist1">
+                <p>${data.name}</p>
+              </div>
+              <p class="change">${data.change}</p>
+              <p>${data.sold}</p>
+              <p class="volume">${data.sales}</p>
+            `;
+  artists.appendChild(creatorDiv);
+});
 
 creators.forEach((creator, index) => {
   const creatorDiv = document.createElement("div");
@@ -114,7 +226,6 @@ creators.forEach((creator, index) => {
   `;
   topCreator.appendChild(creatorDiv);
 });
-
 
 categoryData.forEach((data, index) => {
   const creatorDiv = document.createElement("div");

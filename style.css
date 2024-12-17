@@ -456,7 +456,7 @@ main .hero .right img {
     font-size: 22px;
 }
 
-.discover-nfts{
+.discover-nfts {
     width: 100%;
     margin: 44px 0;
 }
@@ -531,14 +531,14 @@ main .hero .right img {
     font-size: 18px;
 }
 
-.discover-nfts .content .card .info .about img{
+.discover-nfts .content .card .info .about img {
     width: 32px;
     height: 32px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.discover-nfts .content .card .info .price{
+.discover-nfts .content .card .info .price {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -546,18 +546,19 @@ main .hero .right img {
     font-weight: 500;
 }
 
-.discover-nfts .content .card .info .price div .priceHeading{
+.discover-nfts .content .card .info .price div .priceHeading {
     font-size: 16px;
     font-weight: 400;
     color: #858584;
 }
 
-.discover-nfts .content .card .info .price div .priceInfo{
-        font-size: 22px;
-        margin-top: 6px;
-        font-weight: 400;
+.discover-nfts .content .card .info .price div .priceInfo {
+    font-size: 22px;
+    margin-top: 6px;
+    font-weight: 400;
 }
-.how-works{
+
+.how-works {
     width: 100%;
     margin: 44px 0;
 }
@@ -600,7 +601,7 @@ main .hero .right img {
 .how-works .content .card img {
     object-fit: contain;
     width: 250px;
-    height: 250px;    
+    height: 250px;
 }
 
 .how-works .content .card .info {
@@ -621,7 +622,7 @@ main .hero .right img {
     padding: 0 16px;
 }
 
-.join-us{
+.join-us {
     background-color: var(--blur-back);
     padding: 44px;
     border-radius: 22px;
@@ -633,18 +634,18 @@ main .hero .right img {
     gap: 166px;
 }
 
-.join-us div h1{
+.join-us div h1 {
     font-size: 46px;
     font-weight: 500;
 }
 
-.join-us div p{
+.join-us div p {
     font-size: 32px;
     font-weight: 300;
     margin: 12px 0;
 }
 
-.join-us form{
+.join-us form {
     margin-top: 22px;
     display: flex;
     width: 100%;
@@ -654,7 +655,7 @@ main .hero .right img {
 }
 
 
-.join-us form input{
+.join-us form input {
     width: 100%;
     border-radius: 22px;
     color: #2B2B2B;
@@ -666,11 +667,11 @@ main .hero .right img {
     padding: 0 32px;
 }
 
-.join-us form button{
+.join-us form button {
     width: 250px;
 }
 
-.join-us form button img{
+.join-us form button img {
     object-fit: contain;
     width: 24px;
     height: auto;
@@ -782,7 +783,7 @@ footer .top .third {
     font-size: 24px;
     color: #858584;
     width: 33%;
-}   
+}
 
 footer .top .third h5 {
     font-size: 28px;
@@ -806,7 +807,7 @@ footer .top .third form {
 }
 
 
-footer .top .third form input{
+footer .top .third form input {
     width: 100%;
     border-radius: 22px;
     color: #2B2B2B;
@@ -819,7 +820,7 @@ footer .top .third form input{
 }
 
 footer .bottom {
-    border-top: 1px solid #cccccc ;
+    border-top: 1px solid #cccccc;
     margin-top: 32px;
     padding-top: 18px;
     display: flex;
@@ -831,7 +832,7 @@ footer .bottom {
 
 /* create-account */
 
-.create-account{
+.create-account {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -840,13 +841,13 @@ footer .bottom {
     width: 100%;
 }
 
-.create-account img{
+.create-account img {
     width: 40%;
     height: auto;
     object-fit: contain;
 }
 
-.create-account form{
+.create-account form {
     display: flex;
     flex-direction: column;
     gap: 22px;
@@ -857,20 +858,20 @@ footer .bottom {
     padding: 32px;
 }
 
-.create-account form h1{
+.create-account form h1 {
     font-size: 67px;
     font-weight: 600;
     color: #fff;
 }
 
-.create-account form p{
+.create-account form p {
     font-size: 22px;
     font-weight: normal;
     color: #cccccc;
     line-height: 38px;
 }
 
-.create-account form input{
+.create-account form input {
     width: 100%;
     border-radius: 22px;
     color: #2B2B2B;
@@ -881,15 +882,15 @@ footer .bottom {
     background-color: var(--white-color);
     padding: 0 22px;
     height: 60px;
-}   
+}
 
-.create-account form button{
+.create-account form button {
     font-size: 22px;
     width: 100%;
     height: 60px;
 }
 
-.create-account form .myInput{
+.create-account form .myInput {
     display: flex;
     align-items: center;
     background-color: var(--white-color);
@@ -898,13 +899,13 @@ footer .bottom {
     height: 60px;
 }
 
-.create-account form .myInput img{
+.create-account form .myInput img {
     width: 24px;
     height: 24px;
     object-fit: contain;
 }
 
-.wallets{
+.wallets {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -928,14 +929,111 @@ footer .bottom {
     cursor: pointer;
 }
 
-.wallets .wallet img{
+.wallets .wallet img {
     width: 44px;
     height: 44px;
     object-fit: contain;
 }
 
-.wallets .wallet p{
+.wallets .wallet p {
     font-size: 22px;
     font-weight: 550;
     color: var(--white-color);
+}
+
+.top-artists {
+    text-align: left;
+    width: 100%;
+}
+
+.top-artists h1 {
+    font-size: 67px;
+    font-weight: 600;
+    width: 100%;
+    color: #fff;
+}
+
+.top-artists p {
+    width: 100%;
+    font-size: 22px;
+    margin-top: 12px;
+    font-weight: normal;
+    color: #cccccc;
+    line-height: 38px;
+}
+
+.top-artists .artist-header {
+    display: grid;
+    grid-template-columns: 0.5fr 5fr 2fr 2fr 2fr;
+    border: 2px solid #3B3B3B;
+    border-radius: 22px;
+    gap: 12px;
+    width: 100%;
+    margin-top: 12px;
+    padding: 16px;
+}
+
+.top-artists .artist-header p {
+    color: #858584;
+    font-size: 18px;
+    padding: 0 10px;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+.top-artists .artists {
+    display: grid;
+    grid-template-columns: 0.5fr 5fr 2fr 2fr 2fr;
+    padding: 16px 0;
+    width: 100%;
+    margin-top: 12px;
+}
+
+.top-artists .artists .artist {
+    display: contents;
+    background-color: var(--blur-back) !important;
+    border-radius: 22px;
+    cursor: pointer;
+    padding: 16px 0;
+    transition: all 0.3s ease;
+}
+
+.top-artists .artists .artist .index {
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+}
+
+.top-artists .artists .artist .volume {
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+}
+
+.top-artists .artists .artist p,
+.top-artists .artists .artist .artist-info {
+    display: flex;
+    padding: 10px 16px;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: 350;
+    color: var(--white-color);
+    background-color: #3B3B3B;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.top-artists .artists .artist .artist-info p {
+    font-weight: 550;
+}
+
+.top-artists .artists .artist .change {
+    color: #00AC4F;
+}
+
+.top-artists .artists .artist img {
+    width: 52px;
+    height: 52px;
+    object-fit: cover;
+    border-radius: 50%;
 }
