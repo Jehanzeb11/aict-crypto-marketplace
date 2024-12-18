@@ -45,7 +45,18 @@ header {
     z-index: 999;
 }
 
-header img {
+header div a{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+header div a span {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+header div a img {
 
     object-fit: contain;
 }
@@ -105,6 +116,10 @@ main {
     main {
         max-width: 85%;
     }
+}
+
+.active {
+    color: var(--pri-color) !important;
 }
 
 main .hero {
@@ -706,6 +721,21 @@ footer .top .first {
 
 }
 
+footer .top .first .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+footer .top .first .logo img {
+    width: 40px;
+    height: auto;
+    object-fit: contain;
+}
+
 footer .top .first h5 {
     font-size: 22px;
     font-weight: normal;
@@ -1036,4 +1066,394 @@ footer .bottom {
     height: 52px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+.hero-market {
+    margin: 44px 0;
+    width: 80%;
+
+}
+
+.hero-market h1 {
+    font-size: 67px;
+    font-weight: 600;
+    width: 100%;
+    color: #fff;
+}
+
+.hero-market p {
+    width: 100%;
+    font-size: 22px;
+    margin-top: 12px;
+    font-weight: normal;
+    color: #cccccc;
+    line-height: 38px;
+}
+
+.hero-market form {
+    margin-top: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: 2px solid #3B3B3B;
+    border-radius: 22px;
+    padding: 13px 16px;
+    background-color: transparent;
+    gap: 12px;
+}
+
+.hero-market form input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 18px;
+}
+
+.hero-market form button {
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+
+.market-main {
+    background-color: var(--blur-back);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.market {
+    padding: 44px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 36px;
+    width: 80%;
+}
+
+.market .market-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 36px;
+    margin-top: 44px;
+}
+
+.market .market-content .card {
+    width: 440px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.market .market-content .card:hover {
+    transform: scale(1.1);
+}
+
+.market .market-content .card img {
+    object-fit: cover;
+    width: 100%;
+    margin: 0;
+}
+
+.market .market-content .card .info {
+    width: 100%;
+    background-color: #2B2B2B;
+    padding: 20px;
+    margin: 0;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+
+.market .market-content .card .info h4 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.market .market-content .card .info .about {
+    display: flex;
+    align-items: center;
+    margin: 32px 0;
+    gap: 12px;
+    font-size: 18px;
+}
+
+.market .market-content .card .info .about img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.market .market-content .card .info .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.market .market-content .card .info .price div .priceHeading {
+    font-size: 16px;
+    font-weight: 400;
+    color: #858584;
+}
+
+.market .market-content .card .info .price div .priceInfo {
+    font-size: 22px;
+    margin-top: 6px;
+    font-weight: 400;
+}
+
+.detail-header {
+    width: 100%;
+}
+
+.detail-header img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+
+.nft-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 44px 0;
+    width: 80%;
+    gap: 12px;
+}
+
+.nft-info .left {
+    width: 60%;
+}
+
+.nft-info .left h2 {
+    font-size: 46px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.nft-info .left p {
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: normal;
+    color: var(--white-color);
+    line-height: 38px;
+}
+
+.nft-info .left b {
+    font-size: 18px;
+    margin-top: 12px;
+    color: #858584;
+    font-weight: 600;
+    line-height: 38px;
+}
+
+.nft-info .left .creator {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0;
+}
+
+.nft-info .left .creator img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nft-info .left .creator span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nft-info .left .tags {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0;
+}
+
+.nft-info .left .tags button {
+    padding: 8px 14px;
+    background-color: var(--blur-back);
+    border: none;
+    border-radius: 12px;
+    color: var(--white-color);
+    font-size: 14px;
+}
+
+.nft-info .right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.box {
+    background-color: var(--blur-back);
+    padding: 20px;
+    border-radius: 16px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.box p {
+    font-size: 22px;
+    font-weight: normal;
+    color: var(--white-color);
+    line-height: 38px;
+}
+
+.box .timer {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin: 12px 0;
+}
+
+.box .timer .my-time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.box .timer .my-time p {
+    font-size: 44px;
+    font-weight: 500;
+}
+
+.box .timer .my-time span {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 6px;
+    color: #cccccc;
+}
+
+.colons{
+    color: #cccccc;
+    font-size: 44px;
+    margin-top: -22px;
+}
+
+.related-nfts{
+    max-width: 80%;
+    margin: 44px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 36px;
+}
+
+.related-nfts h2{
+    width: 100%;
+    font-size: 46px;
+    font-weight: 600;
+}
+
+.more-nfts{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    flex-wrap: wrap;
+}
+
+.more-nfts .content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 36px;
+    margin-top: 44px;
+}
+
+.more-nfts .content .card {
+    width: 440px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.more-nfts .content .card:hover {
+    transform: scale(1.1);
+}
+
+.more-nfts .content .card img {
+    object-fit: cover;
+    width: 100%;
+    margin: 0;
+}
+
+.more-nfts .content .card .info {
+    width: 100%;
+    background-color: var(--blur-back);
+    padding: 20px;
+    margin: 0;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+
+.more-nfts .content .card .info h4 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.more-nfts .content .card .info .about {
+    display: flex;
+    align-items: center;
+    margin: 32px 0;
+    gap: 12px;
+    font-size: 18px;
+}
+
+.more-nfts .content .card .info .about img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.more-nfts .content .card .info .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.more-nfts .content .card .info .price div .priceHeading {
+    font-size: 16px;
+    font-weight: 400;
+    color: #858584;
+}
+
+.more-nfts .content .card .info .price div .priceInfo {
+    font-size: 22px;
+    margin-top: 6px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
 }

@@ -10,14 +10,19 @@
 
 <body>
   <header class="header">
-    <img src="./assets/logo.png" alt="logo" />
-
+    <div> <a href="/index.html"><img src="./assets/logo.png" alt="logo" /> <span>Mint Market</span></a></div>
     <nav>
       <ul>
-        <li>Marketplace</li>
-        <li>Rankings</li>
-        <li>Connect a wallet</li>
-        <button><img src="./assets/User.png" alt="" /> Sign Up</button>
+        <a href="/marketplace.html">
+          <li>Marketplace</li>
+        </a>
+        <a href="/top-creators.html">
+          <li>Rankings</li>
+        </a>
+        <a href="/wallet.html">
+          <li>Connect a wallet</li>
+        </a>
+        <button onclick="window.location.href = '/create-account.html';"><img src="./assets/User.png" alt="" /> Sign Up</button>
       </ul>
     </nav>
   </header>
@@ -175,7 +180,7 @@
 
       <div class="content">
 
-        <div class="card">
+        <div class="card" onclick="window.location.href = '/nft-detail.html';">
           <img src="./assets/discover-1.png" alt="discover-1">
           <div class="info">
             <h4>Distant Galaxy</h4>
@@ -198,7 +203,7 @@
         </div>
 
 
-        <div class="card">
+        <div class="card" onclick="window.location.href = '/nft-detail.html';">
           <img src="./assets/discover-2.png" alt="discover-2">
           <div class="info">
             <h4>Life On Edena</h4>
@@ -220,7 +225,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card" onclick="window.location.href = '/nft-detail.html';">
           <img src="./assets/discover-3.png" alt="discover-3">
           <div class="info">
             <h4>AstroFiction</h4>
@@ -293,18 +298,21 @@
         </form>
       </div>
     </section>
-  
+
   </main>
   <footer>
 
     <div class="top">
       <div class="first">
-        <img src="./assets/logo.png" alt="logo">
+        <div class="logo">
+          <img src="./assets/logo.png" alt="logo">
+          <span>Mint Market</span>
+        </div>
         <p>Animarket is a platform for creators to sell their NFTs. We provide a simple but powerful platform to
           help you sell your NFTs.</p>
-  
+
         <h5>Join our community</h5>
-  
+
         <div class="social">
           <img src="./assets/DiscordLogo.png" alt="instagram">
           <img src="./assets/YoutubeLogo.png" alt="facebook">
@@ -341,4 +349,5 @@
   </footer>
 </body>
 <script src="./script.js"></script>
+
 </html>

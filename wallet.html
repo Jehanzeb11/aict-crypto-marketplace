@@ -8,17 +8,22 @@
   </head>
   <body>
     <header class="header">
-        <img src="./assets/logo.png" alt="logo" />
-    
-        <nav>
-          <ul>
+      <div> <a href="/index.html"><img src="./assets/logo.png" alt="logo" /> <span>Mint Market</span></a></div>
+      <nav>
+        <ul>
+          <a href="/marketplace.html">
             <li>Marketplace</li>
+          </a>
+          <a href="/top-creators.html">
             <li>Rankings</li>
-            <li>Connect a wallet</li>
-            <button><img src="./assets/User.png" alt="" /> Sign Up</button>
-          </ul>
-        </nav>
-      </header>
+          </a>
+          <a href="/wallet.html">
+            <li class="active">Connect a wallet</li>
+          </a>
+          <button onclick="window.location.href = '/create-account.html';"><img src="./assets/User.png" alt="" /> Sign Up</button>
+        </ul>
+      </nav>
+    </header>
 
 <div class="create-account">
 <img src="./assets/wallet.png" alt="">
@@ -52,50 +57,53 @@
         </form>
 </div>
 
-      <footer>
+<footer>
 
-        <div class="top">
-          <div class="first">
-            <img src="./assets/logo.png" alt="logo">
-            <p>Animarket is a platform for creators to sell their NFTs. We provide a simple but powerful platform to
+  <div class="top">
+      <div class="first">
+          <div class="logo">
+              <img src="./assets/logo.png" alt="logo">
+              <span>Mint Market</span>
+          </div>
+          <p>Animarket is a platform for creators to sell their NFTs. We provide a simple but powerful platform to
               help you sell your NFTs.</p>
-      
-            <h5>Join our community</h5>
-      
-            <div class="social">
+
+          <h5>Join our community</h5>
+
+          <div class="social">
               <img src="./assets/DiscordLogo.png" alt="instagram">
               <img src="./assets/YoutubeLogo.png" alt="facebook">
               <img src="./assets/TwitterLogo.png" alt="twitter">
               <img src="./assets/InstagramLogo.png" alt="linkedin">
-            </div>
           </div>
-          <div class="second">
-            <h5>Explore</h5>
-            <ul>
+      </div>
+      <div class="second">
+          <h5>Explore</h5>
+          <ul>
               <li>Marketplace</li>
               <li>Rankings</li>
               <li>Connect a wallet</li>
-            </ul>
-          </div>
-    
-          <div class="third">
-            <h5>Join our weekly digest</h5>
-            <p>Get exclusive promotions & updates straight to your inbox.</p>
-            <form>
+          </ul>
+      </div>
+
+      <div class="third">
+          <h5>Join our weekly digest</h5>
+          <p>Get exclusive promotions & updates straight to your inbox.</p>
+          <form>
               <input type="text" name="" id="" placeholder="Enter your email here" required>
               <button class="btn">Subscribe</button>
-            </form>
-          </div>
-        </div>
-    
-        <div class="bottom">
-          Ⓒ NFT Market. Use this template freely.
-        </div>
-    
-        </div>
-    
-    
-      </footer>
+          </form>
+      </div>
+  </div>
+
+  <div class="bottom">
+      Ⓒ NFT Market. Use this template freely.
+  </div>
+
+  </div>
+
+
+</footer>
   </body>
 <script src="./script.js"></script>
 </html>
